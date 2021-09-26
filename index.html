@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="HTML5 , CSS , JavaScript , Bootstrap , Video , Video Player , Custom Video Player , Project">
+    <meta name="description" content="Create custom video player with javascript">
+    <meta http-equiv="author" content="Hossein Ghorbanloo">
+    <meta http-equiv="refresh" content="200 ">
+    <link rel="stylesheet" href="./vendor/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/css/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="icon" href="./public/icons/title.png">
+    <link rel="apple-touch-icon" href="./public/icons/title.png">
+    <title>Custom Video Player</title>
+</head>
+<body>
+
+    <div class="container-fluid min-vh-100">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto text-center">
+                <h1 class="text-dark my-3 py-4 display-4">Video Player Project</h1>
+                <div class="video-player d-flex">
+                    <video src="./public/videos/traileranimation.mp4" width="100%" height="auto" id="video"></video>
+
+                    <div class="video-controls">
+                        <div class="video-progress">
+                            <input type="range" name="time" id="progress" step="1" min="0" max="100" value="0">
+                        </div>
+                        <div class="video-btns">
+                            <div class="left">
+                                <div class="btn play">
+                                    <i class='bx bx-play bx-sm'></i>
+                                </div>
+                                <div class="btn rewind">
+                                    <i class='bx bx-rewind bx-sm' ></i>
+                                </div>
+                                <div class="btn forward">
+                                    <i class='bx bx-fast-forward bx-sm' ></i>
+                                </div>
+                                <div class="time px-3 d-flex">
+                                    <span class="current-time">00:00</span>
+                                    <span>/</span>
+                                    <span class="all-time">00:00</span>
+                                </div>
+                            </div>
+                            <div class="right d-flex align-items-center justify-content-center">
+                                <div class="btn volume">
+                                    <i class='bx bxs-volume-full bx-xs'></i>
+                                    <input type="range" name="volume" id="volumeInput" min="0" max="100" value="50"/>
+                                </div>
+                                <div class="btn fullscreen">
+                                    <i class='bx bx-fullscreen bx-xs' ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./vendor/js/jquery/jquery.js"></script>
+    <script src="./vendor/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
